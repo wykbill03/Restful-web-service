@@ -1,5 +1,3 @@
-# __author__ = Yikai Wang
-
 import httplib
 import urllib
 import json
