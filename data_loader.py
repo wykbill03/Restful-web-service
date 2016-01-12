@@ -1,11 +1,10 @@
-# __author__ = Yikai Wang
 import json
 import psycopg2, psycopg2.extras
 import StringIO
 import sys
 
 # DSN location of the AWS - RDS instance
-# DB_DSN = "host= dbname= user= password= "
+DB_DSN = "host= dbname= user= password= "
 
 def transform_meta_data(line):
     """
