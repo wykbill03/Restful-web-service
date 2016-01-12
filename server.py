@@ -1,4 +1,3 @@
-# __author__ = Yikai Wang
 from flask import Flask, request, jsonify
 import psycopg2, psycopg2.extras
 
@@ -11,8 +10,8 @@ app = Flask(__name__)
 @app.route('/')
 def default():
     output = dict()
-    output['message'] = 'Welcome to the MSAN 697 Project server!'
-    output['author'] = 'Yikai Wang'
+    output['message'] = 'Welcome to the server!'
+    output['author'] = ' '
     output['module'] = [{}]*4
     output['module'][0]={"count":["items", "reviews", "items in reviews table"]}
     output['module'][1]={"general statistics":["price", "rating", "helpful"]}
